@@ -25,7 +25,20 @@
   .user-name{
     margin: 0px auto;
     margin-top: 340px;
+    font-size: 3vw;
+
   }
+
+  .margin-left
+  {
+    margin-left: 260px;
+  }
+
+  .profile-banner{
+    background-image: url(https://images.unsplash.com/photo-1493713838217-28e23b41b798?ixlib=rb-1.2.1&w=1000&q=80.jpg);background-size: 100% 25vw; background-repeat: no-repeat;
+  }
+
+  
   #wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -195,6 +208,7 @@
   }
   
   @media (min-width: 768px) {
+    
     .sidebar {
       width: 225px !important;
     }
@@ -246,6 +260,7 @@
     .sidebar.toggled .nav-item.dropdown .dropdown-toggle::after {
       display: none;
     }
+    
   }
   
   .sidebar.fixed-top {
@@ -384,6 +399,7 @@
     body.sidebar-toggled footer.sticky-footer {
       width: calc(100% - 90px);
     }
+
   }
   /* Layout */
 .s-layout {
@@ -505,6 +521,7 @@
   .s-sidebar__trigger:focus + .s-sidebar__nav {
      width: 15em;
   }
+  
 }
 
 @media (min-width: 68em) {
@@ -520,6 +537,19 @@
   
   .s-sidebar__nav ul {
      top: 1.3em;
+  }
+  
+}
+
+@media(max-width: 68em)
+{
+  .margin-left{
+    margin-left: 0;
+  }
+  .profile-banner{
+    background-image: url(https://images.unsplash.com/photo-1493713838217-28e23b41b798?ixlib=rb-1.2.1&w=1000&q=80.jpg);
+    background-size: 100% 50vw; 
+    background-repeat: no-repeat;
   }
 }
   
