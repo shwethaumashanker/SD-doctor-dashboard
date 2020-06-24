@@ -48,11 +48,36 @@
     display: inline-block;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 5px 13px #00000029;
+    font: Semibold 15px/22px 'Segoe UI';
+    font-weight: 600 ;
     border: 1px solid #707070;
     opacity: 1;
     border-radius: 10px;
-    padding:4px;
+    padding: 4px;
+    margin: 6px;
   }
+
+  .time-btn:hover{
+    background: #0C0A3C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 11px 6px #00000029;
+    opacity: 1;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+  }
+
+  .time-btn span{
+    display: none;
+  }
+
+  .time-btn:hover span{
+    display: inline-block;
+  }
+
+  .time-btn:hover .circle{
+    display: none;
+  }
+
   .circle{
     display: inline-block;
     border-radius: 50%;
@@ -62,6 +87,7 @@
     border: 1px solid #707070;
     opacity: 1;
   }
+  
 
   #wrapper {
     display: -webkit-box;
@@ -581,8 +607,9 @@
  flex: 1;
 }
 .doctor-name{
-  text-align: left;
-font: Semibold 20px/27px Segoe UI;
+text-align: left;
+font: Semibold 20px/27px 'Segoe UI';
+font-weight: 600;
 letter-spacing: 0px;
 color: #0C0A3C;
 opacity: 1;
@@ -591,9 +618,20 @@ padding-top: 10px;
 
 .doctor-department{
 text-align: left;
-font: Semibold 14px/19px Segoe UI;
+font: Semibold 14px/19px 'Segoe UI';
+font-weight: 500;
 letter-spacing: 0px;
 color: #707070;
+opacity: 1;
+}
+
+.add-slot{
+display: inline-block;
+text-align: right;
+font: Semibold 20px/27px 'Segoe UI';
+font-weight: 600;
+letter-spacing: 0px;
+color: #0C0A3C;
 opacity: 1;
 }
 
