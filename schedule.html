@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Smart Doctors</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <link rel="stylesheet" href="clndr.css" type="text/css" />
+  <script src="js/underscore-min.js"></script>
+  <script src="js/moment-2.2.1.js"></script>
+  <script src="js/clndr.js"></script>
+  <script src="js/site.js"></script>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    hr{
+      border: 1px dashed #707070;
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body style="background-color: #E6EDF5;">
+
+  <nav class="navbar nav-extended navbar-expand navbar-light bg-light static-top">
+    <button class="btn btn-link btn-sm text-white d-sm-block d-md-none" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+    <a id="hlogo" class="navbar-brand mr-1 font-weight-bold p-1" href="index.html"><img src="img/RK_smart_doc_blue.png"
+        width="150vw"></a>
+
+
+
+    <!-- Navbar Search -->
+    <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+      <div class="input-group">
+        </button>
+      </div>
+      </div>
+    </form>
+    <span id="sesname" class="nav-item dropdown no-arrow pull-right" style="text-align: right;">&emsp;<span
+        style="font-style: italic;">Hi,Harry
+        Potter
+        <!-- Navbar -->
+        <a href="#" style="color:black"><img src="img/notification.png" width="10%"></a>
+        <a href="#" style="color:black"><img src="img/comment.png" width="10%"></a>
+        <a href="logout" style="color:black"><img class="float-right" src="img/power-button.png" width="10%"></a>
+  </nav>
+  <div class="s-layout">
+    <div class="s-layout__sidebar">
+      <a class="s-sidebar__trigger" href="#0">
+        <i class="fa fa-bars"></i>
+      </a>
+
+      <nav class="s-sidebar__nav">
+        <ul>
+          <li>
+            <a class="s-sidebar__nav-link" href="myAccount.html">
+              <img src="img/account.png" style="float: left;" width="25%"><em>My Account</em>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="schedule.html">
+              <img src="img/calendar2.png" style="float: left;" width="25%"><em>Schedule</em>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="Appointment.html">
+              <img src="img/calendar.png" style="float: left;" width="25%"><em>Appointment</em>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="#0">
+              <img src="img/dollar.png" style="float: left;" width="25%"><em>Consultation Fees</em>
+            </a>
+          </li>
+          <li>
+            <a class="s-sidebar__nav-link" href="#0">
+              <img src="img/consulting.png" style="float: left;" width="25%"><em>Consulting Room</em>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+    <div class="content">
+      <div style="background-color: white;">
+        <div style="display: inline-block;text-align: center;">
+          <img src="https://hcplive.s3.amazonaws.com/v1_media/_image/happydoctor.jpg" style="display: inline-block;"
+            class="rounded" width="51px" height="55px">
+          <div style="display: inline-block;">
+            <div class="doctor-name">Dr. John Cristopher</div>
+            <div class="doctor-department">Homeopathy</div>
+          </div>
+
+        </div>
+        <button class="shadow-btn  m-2 float-right">Appointments</button>
+      </div>
+
+
+      <div class="row m-3">
+        <div class="col-md-5">
+          <p>Appointments</p>
+          <!--Calender-->
+          <div class="calender">
+            <div class="column_right_grid calender">
+              <div class="cal1">
+                <div class="clndr">
+                  <div class="clndr-controls">
+                    <div class="clndr-control-button">
+                      <p class="clndr-previous-button">previous</p>
+                    </div>
+                    <div class="month">September 2015</div>
+                    <div class="clndr-control-button rightalign">
+                      <p class="clndr-next-button">next</p>
+                    </div>
+                  </div>
+                  <table class="clndr-table" border="0" cellspacing="0" cellpadding="0">
+                    <thead>
+                      <tr class="header-days">
+                        <td class="header-day">S</td>
+                        <td class="header-day">M</td>
+                        <td class="header-day">T</td>
+                        <td class="header-day">W</td>
+                        <td class="header-day">T</td>
+                        <td class="header-day">F</td>
+                        <td class="header-day">S</td>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="day past adjacent-month last-month calendar-day-2015-08-30">
+                          <div class="day-contents">30</div>
+                        </td>
+                        <td class="day past adjacent-month last-month calendar-day-2015-08-31">
+                          <div class="day-contents">31</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-01">
+                          <div class="day-contents">1</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-02">
+                          <div class="day-contents">2</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-03">
+                          <div class="day-contents">3</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-04">
+                          <div class="day-contents">4</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-05">
+                          <div class="day-contents">5</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="day past calendar-day-2015-09-06">
+                          <div class="day-contents">6</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-07">
+                          <div class="day-contents">7</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-08">
+                          <div class="day-contents">8</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-09">
+                          <div class="day-contents">9</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-10">
+                          <div class="day-contents">10</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-11">
+                          <div class="day-contents">11</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-12">
+                          <div class="day-contents">12</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="day past event calendar-day-2015-09-13">
+                          <div class="day-contents">13</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-14">
+                          <div class="day-contents">14</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-15">
+                          <div class="day-contents">15</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-16">
+                          <div class="day-contents">16</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-17">
+                          <div class="day-contents">17</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-18">
+                          <div class="day-contents">18</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-19">
+                          <div class="day-contents">19</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="day past calendar-day-2015-09-20">
+                          <div class="day-contents">20</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-21">
+                          <div class="day-contents">21</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-22">
+                          <div class="day-contents">22</div>
+                        </td>
+                        <td class="day past event calendar-day-2015-09-23">
+                          <div class="day-contents">23</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-24">
+                          <div class="day-contents">24</div>
+                        </td>
+                        <td class="day past calendar-day-2015-09-25">
+                          <div class="day-contents">25</div>
+                        </td>
+                        <td class="day today calendar-day-2015-09-26">
+                          <div class="day-contents">26</div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="day calendar-day-2015-09-27">
+                          <div class="day-contents">27</div>
+                        </td>
+                        <td class="day calendar-day-2015-09-28">
+                          <div class="day-contents">28</div>
+                        </td>
+                        <td class="day calendar-day-2015-09-29">
+                          <div class="day-contents">29</div>
+                        </td>
+                        <td class="day calendar-day-2015-09-30">
+                          <div class="day-contents">30</div>
+                        </td>
+                        <td class="day adjacent-month next-month calendar-day-2015-10-01">
+                          <div class="day-contents">1</div>
+                        </td>
+                        <td class="day adjacent-month next-month calendar-day-2015-10-02">
+                          <div class="day-contents">2</div>
+                        </td>
+                        <td class="day adjacent-month next-month calendar-day-2015-10-03">
+                          <div class="day-contents">3</div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7">
+          <div class="card" style="background-color: white;">
+          <div>
+            Morning
+          </div>
+          <div>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+          </div>
+          <br>
+          <div>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+            <button class="time-btn" ><div class="circle"></div>&nbsp;&nbsp;&nbsp;9:00AM</button>
+          </div>
+          <hr>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
