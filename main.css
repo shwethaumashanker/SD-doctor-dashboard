@@ -616,6 +616,16 @@ opacity: 1;
 padding-top: 10px;
 }
 
+.name{
+  text-align: left;
+  font: Semibold 20px/27px 'Segoe UI';
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #0C0A3C;
+  opacity: 1;
+  padding-top: 10px;
+  }
+
 .doctor-department{
 text-align: left;
 font: Semibold 14px/19px 'Segoe UI';
@@ -632,6 +642,30 @@ font: Semibold 20px/27px 'Segoe UI';
 font-weight: 600;
 letter-spacing: 0px;
 color: #0C0A3C;
+opacity: 1;
+}
+
+
+.appoint{
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 13px 13px 10px #00000029;
+border-radius: 20px;
+opacity: 1;
+}
+
+.patient-name{
+font: Semibold 21px/28px 'Segoe UI';
+font-weight: 600;
+letter-spacing: 0px;
+color: #0C0A3C;
+opacity: 1;
+}
+
+.consultation{
+font: Semibold 15px/20px 'Segoe UI';
+font-size: 12px;
+letter-spacing: 0px;
+color: #707070;
 opacity: 1;
 }
 
